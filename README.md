@@ -4,6 +4,12 @@
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
+## 📸 Dashboard Preview
+
+![Oracle to PostgreSQL Migration Dashboard](assets/dashboard-screenshot.svg)
+
+*Migration dashboard showing progress, schema conversion, code conversion, and data migration status.*
+
 ## 🎯 Overview
 
 Complete migration solution:
