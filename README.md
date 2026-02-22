@@ -1,61 +1,82 @@
-# Oracle to PostgreSQL Migration Suite
+# oracle-postgres-migrator
 
-> Comprehensive toolkit for migrating from Oracle Database to PostgreSQL with automated schema, data, and code conversion.
+## Detailed Description
 
-[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+oracle-postgres-migrator is maintained as an industry-grade software project with production-ready engineering practices.  
+This repository includes documented setup, quality gates, operational guidance, and governance standards so contributors can safely build, test, and ship changes with confidence.
 
-## 📸 Dashboard Preview
+## Problem Statement
 
-![Oracle to PostgreSQL Migration Dashboard](assets/dashboard-screenshot.svg)
+Describe the user or business problem this project solves, the target users, and expected outcomes.
 
-*Migration dashboard showing progress, schema conversion, code conversion, and data migration status.*
+## Solution Overview
 
-## 🎯 Overview
+Summarize the architecture, core modules, and runtime behavior at a high level.
 
-Complete migration solution:
-- **Schema Migration**: Converts Oracle schemas to PostgreSQL
-- **Data Migration**: Extracts and loads data
-- **Code Conversion**: Converts PL/SQL to PL/pgSQL
-- **Compatibility Layer**: Oracle SQL compatibility
-- **Migration Testing**: Automated testing framework
+## Key Features
 
-**Why Oracle Would Acquire This:**
-- Oracle might acquire to offer "Oracle to Oracle Cloud" migration
-- Or to prevent customers from leaving (by making migration harder)
-- Could integrate into Oracle Cloud migration services
+- Clear project scope and intended use.
+- Reproducible local development workflow.
+- Test coverage and CI quality gates.
+- Security and contribution policies.
+- Deployment-ready repository structure.
 
-## ✨ Features
+## Repository Structure
 
-- Automated schema conversion
-- Parallel data migration
-- PL/SQL to PL/pgSQL conversion
-- Oracle SQL compatibility layer
-- Migration testing and validation
-- Rollback support
-
-## 🚀 Quick Start
-
-```bash
-# Assess migration
-python -m oracle_postgres_migrator assess --source oracle://user:pass@host/db
-
-# Migrate schema
-python -m oracle_postgres_migrator schema --source oracle://... --target postgresql://...
-
-# Migrate data
-python -m oracle_postgres_migrator data --parallel 10
-
-# Convert code
-python -m oracle_postgres_migrator code --plsql-to-plpgsql
+```text
+.
+|-- src/                  # Core implementation
+|-- tests/                # Automated test suites
+|-- docs/                 # Design notes and operational docs
+|-- .github/workflows/    # CI pipelines
+|-- README.md
+|-- LICENSE
+|-- CONTRIBUTING.md
+|-- SECURITY.md
+|-- CODE_OF_CONDUCT.md
 ```
 
-## 💰 Monetization
+## Getting Started
 
-- **Open-Source**: Basic migration tools
-- **Enterprise**: Advanced features, support ($100K-$500K/year)
-- **Professional Services**: Migration consulting ($300-$800/hour)
+### Prerequisites
 
-## 📝 License
+- Git
+- Project runtime/toolchain for this repo
 
-Apache 2.0
+### Local Setup
 
+```bash
+make test
+make lint
+```
+
+## Usage
+
+Document primary commands, API routes, CLI examples, or UI workflows here.
+
+## Quality Standards
+
+- CI must pass before merge.
+- Changes require tests for critical behavior.
+- Security-sensitive changes should include risk notes.
+- Keep pull requests focused and reviewable.
+
+## Security
+
+See `SECURITY.md` for responsible disclosure and handling guidelines.
+
+## Contributing
+
+See `CONTRIBUTING.md` for branching, commit, and pull request expectations.
+
+## Roadmap
+
+Track upcoming milestones, technical debt, and planned feature work.
+
+## Support
+
+Open a GitHub issue for bugs, feature requests, or documentation gaps.
+
+## License
+
+This project is released under the MIT License.
